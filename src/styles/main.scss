@@ -1,5 +1,11 @@
-$bgcolor: blue;
+* {
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$corDeFundo: #040714;
 
 body {
-    background-color: $bgcolor;
+    background-color: $corDeFundo;
 }
