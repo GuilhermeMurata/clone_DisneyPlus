@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -19,7 +34,7 @@
                 <a href="#" class="link-text">Assinar o Disney+</a>
                 <br>
                 <span class="text">
-                    R$ 27,90/mes ou R$ 279,90 ano a vista
+                    R$ 27,90/mes ou R$ 279,90/mes ano a vista*
                 </span>
             </p>
             <ul class="hero__content__combos">
@@ -35,7 +50,7 @@
                 </li>
             </ul>
             <p class="text--small">
-                *O preco pode variar caso a assinatura seja feita atraves de outras plataformas
+                *O preco pode variar caso a assinatura seja feita atraves de outras plataformas.
             </p>
         </div>
     </section>
@@ -154,9 +169,12 @@
         </div>
     </section>
     <section class="img-text-section img-text-section--img-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Imagem com TV, Computador, tablet e celular">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/fundo_rei_leao.png" alt="Imagem com TV, Computador, tablet e celular">
+        </picture>
         <div class="img-text-section__text_container img-text-section--img-full-width__text_container">
-            <h2 class="title">Baixe seus filmes e series</h2>
+            <h2 class="title">Baixe filmes e series</h2>
             <p class="text--big">
                 Baixe e assista quando e onde quiser. Assim, seus favoritos estao sempre com voce, ate mesmo sem internet.
             </p>
@@ -238,7 +256,6 @@
             </li>
         </ul>
     </section>
-
     <footer class="footer">
         <div class="footer__container">
             <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Logo Disney+">

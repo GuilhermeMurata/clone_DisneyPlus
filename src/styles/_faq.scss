@@ -35,8 +35,7 @@
             height: 0;
             overflow: hidden;
         }
-    }
-
+        
         &--is-open {
             .faq__questions__item__question::after {
                 content: '-';
@@ -48,4 +47,5 @@
             }
         }
     }
+}
 }
